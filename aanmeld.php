@@ -10,7 +10,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/icon dark.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <title>Basketball</title>
+    <title>Basketbal</title>
 
 </head>
 <body>
@@ -36,7 +36,7 @@
 
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="http://www.project-q-m.com/aanmeld.php">Registreer</a>
+                          <a class="nav-link" href="http://www.project-q-m.com/aanmeld.php">Registreren</a>
                       </li>
                         <li class="nav-item">
                           <a class="nav-link" href="http://www.project-q-m.com/aanmeld.php">Inloggen</a>
@@ -51,7 +51,7 @@
             <div class="col-12">
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
-                        <h2 class="display-4">Welkom bij basketbal aanmeld page</h2>
+                        <h2 class="display-4">Welkom bij de Basketbal opleiding!</h2>
                         <p class="lead">Vul uw gegevens in!</p>
                     </div>
                 </div>
@@ -60,11 +60,11 @@
 
         <form class="dropdown-menu p-4">
   <div class="form-group">
-    <label for="exampleDropdownFormEmail2">Email address</label>
+    <label for="exampleDropdownFormEmail2">E-mail</label>
     <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
   </div>
   <div class="form-group">
-    <label for="exampleDropdownFormPassword2">Password</label>
+    <label for="exampleDropdownFormPassword2">Wachtwoord</label>
     <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
   </div>
   <div class="form-group">
@@ -75,7 +75,7 @@
       </label>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-primary">Login</button>
 </form>
 
 
@@ -93,11 +93,11 @@
 
     <div class="form-row">
         <div class="form-group col-md-6">
-        <label for="inputEmail4">email</label>
+        <label for="inputEmail4">e-mail</label>
         <input type="email" class="form-control" id="inputEmail4">
         </div>
         <div class="form-group col-md-6">
-        <label for="inputPassword4">password</label>
+        <label for="inputPassword4">Wachtwoord</label>
         <input type="password" class="form-control" id="inputPassword4">
         </div>
     </div>
@@ -108,8 +108,9 @@
                 <select class="custom-select mr-sm-5" id="inlineFormCustomSelect">
                 <option selected>Choose...</option>
                 <option value="1">Man</option>
-                <option value="2">Woman</option>
-                <option value="3">Other</option>
+                <option value="2">Vrouw</option>
+                <option value="3">Iets anders</option>
+                <option value="4">Wil ik liever niet zeggen</option>
             </select>
         </div>
     </div>
@@ -151,7 +152,7 @@
         </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    <button type="submit" class="btn btn-primary">Login</button>
 </form>
 
 
@@ -159,7 +160,7 @@
         </div class="col-6">
             <form action="./creat.php" method="post">
                 <div class="form-group">
-                    <label for="burgerservicenummer">burgerservicenummer</label>
+                    <label for="burgerservicenummer">Burgerservicenummer</label>
                     <input type="text" class="form-control" id="burgerservicenummer"
                         aria-describedby="burgerservicenummerlHelp" placeholder="Invoer burgerservicenummer"
                         name="burgerservicenummer">
@@ -168,7 +169,7 @@
 
                 </div>
                 <div class="form-group">
-                    <label for="email">email</label>
+                    <label for="email">E-mail</label>
                     <input type="text" class="form-control" id="e-mail" aria-describedby="emailHelp"
                         placeholder="Invoer email" name="email">
 
@@ -176,7 +177,7 @@
                     </div class="col-6">
 
                     <div class="form-group">
-                        <label for="phonenumber">phone-number</label>
+                        <label for="phonenumber">Telefoonnummer</label>
                         <input type="text" class="form-control" id="phonenumber" aria-describedby="phonenumberHelp"
                             placeholder="Invoer phonenumber" name="phonenumber">
                     </div>
@@ -184,23 +185,23 @@
                     <div class="row">
                     </div class="col-6">
                     <div class="form-group">
-                        <label for="firstname">firstname</label>
+                        <label for="firstname">Voornaam</label>
                         <input type="text" class="form-control" id="firstname" aria-describedby="firstlHelp"
                             placeholder="Invoer voornaam" name="firstname">
                     </div>
                     <div class="form-group">
-                        <label for="infix">infix</label>
+                        <label for="infix">Tussenvoegsel</label>
                         <input type="text" class="form-control" id="infix" aria-describedby="infixlHelp"
                             placeholder="Invoer tussenvoegsel" name="infix">
                     </div>
                     <div class="form-group">
-                        <label for="lastname">Lastname</label>
+                        <label for="lastname">Achternaam</label>
                         <input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp"
                             placeholder="Invoer achternaam" name="lastname">
 
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password">Wachtwoord</label>
                         <input type="password" class="form-control" id="password" aria-describedby="password"
                             placeholder="Invoer password" name="password">
                     </div>
@@ -222,9 +223,9 @@
                         </div class="col-12">
                     </div>
                     </div> -->
-                    <p>Wij zulluen uw gegevens nooit delen met derde!</p>
+                    <p>Wij zullen de persoonsgegevens niet voor andere doeleinden gebruiken dan beschreven in deze verklaring, tenzij u daar vooraf toestemming voor heeft gegeven.</p>
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> I agree with the condition</label><br>
+                    <label for="vehicle1"> Ik ga akkoord met de voorwaarden</label><br>
                     <button type="submit" class="btn btn-dark">Versturen</button> 
 
             </form>
