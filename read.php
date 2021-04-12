@@ -13,15 +13,15 @@ while ($record = mysqli_fetch_assoc($result)) {
   // var_dump($record);
   $records .= "<tr>
                 <th scope='row'>" . $record["id"] . "</th>
-                <td>" . $record["burgerservicenummer"] . "</td>
-                <td>" . $record["email"] . "</td>
-                <td>" . $record["phonenumber"] . "</td>
-                <td>" . $record["firstname"] . "</td>
-                <td>" . $record["infix"] . "</td>
-                <td>" . $record["lastname"] . "</td>
-                <td>" . $record["password"] . "</td>
-                <td>" . $record["gander"] . "</td>
-                <td>" . $record["date_of_birth"] . "</td>
+                <td>" . $record["BSN"] . "</td>
+                <td>" . $record["Email"] . "</td>
+                <td>" . $record["Telefoonnummer"] . "</td>
+                <td>" . $record["Voornaam"] . "</td>
+                <td>" . $record["Tussenvoegsel"] . "</td>
+                <td>" . $record["Achternaam"] . "</td>
+                <td>" . $record["Wachtwoord"] . "</td>
+                <td>" . $record["Geslacht"] . "</td>
+                <td>" . $record["Geboortedatum"] . "</td>
                 <td>
                   <a href='./update.php?id=" . $record["id"] . "'>
                     <img src='./img/icons/b_edit.png' alt='pencil'>
@@ -52,14 +52,19 @@ while ($record = mysqli_fetch_assoc($result)) {
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="./CSS/style.css">
-    <title>Basketball</title>    
+
+<!--Favicon-->
+    <link rel="shortcut icon" href="./img/basketball_GIF.gif" type="image/x-icon">
+
+<title>De basketbal opleiding - De opleiding waar jij jezelf kan zijn!</title>   
 </head>
 </body>
 </div>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100">
+<!--Begin of the navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 pl-0 w-100 sticky-top">
             <a class="navbar-brand" href="#"></a>
-            <img src="./img/basketball_GIF.gif" width="30" height="30" alt="" loading="lazy">
+            <img src="./img/basketball_GIF.gif" width="35" height="35" alt="" loading="lazy">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,7 +72,7 @@ while ($record = mysqli_fetch_assoc($result)) {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="http://www.project-q-m.com/#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.mboutrecht.nl/opleidingen/">Opleidingen</a>
@@ -75,14 +80,19 @@ while ($record = mysqli_fetch_assoc($result)) {
 
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="http://www.project-q-m.com/aanmeld.php">Registreer</a>
+                          <a class="nav-link" href="./aanmeld.php">Inschrijven</a>
                       </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="http://www.project-q-m.com/aanmeld.php">Inloggen</a>
+                          <a class="nav-link" href="./inlog.php">Inloggen</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./contact.php">Contact</a>
+                      </li>
                       </ul>
                   </div>
               </nav> 
+
+<!--End of the navbar-->
 
 <main class="container">
   <div class="row">
@@ -107,15 +117,15 @@ while ($record = mysqli_fetch_assoc($result)) {
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">burgerservicenummer</th>
-        <th scope="col">e-mail</th>
-        <th scope="col">phone-number</th>
-        <th scope="col">firstname</th>
-        <th scope="col">infix</th>
-        <th scope="col">lastname</th>
-        <th scope="col">password</th>
-        <th scope="col">gender</th>
-        <th scope="col">date_of_birth</th>
+        <th scope="col">Burgerservicenummer</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Telefoonnummer</th>
+        <th scope="col">Voornaam</th>
+        <th scope="col">Tussenvoegsel</th>
+        <th scope="col">Achternaam</th>
+        <th scope="col">Wachtwoord</th>
+        <th scope="col">Geslacht</th>
+        <th scope="col">Geboortedatum</th>
         
 
         <th scope="col"></th>
