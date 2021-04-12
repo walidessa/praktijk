@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home <span class="sr-only"></span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.mboutrecht.nl/opleidingen/">Opleidingen</a>
@@ -44,7 +44,7 @@
                           <a class="nav-link" href="./aanmeld.php">Inschrijven</a>
                       </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./Inlog.php">Inloggen</a>
+                          <a class="nav-link" href="./inlog.php">Inloggen</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="./contact.php">Contact</a>
@@ -198,10 +198,14 @@
                     </div>
                     </div> -->
                     
-                    <div class="alert alert-danger" role="alert">Wij zullen uw gegevens <a href="voorwaarden.html" class="alert-link">Nooit delen met derde partijen!</a>
+                    <div class="alert alert-danger mt-2" role="alert">Wij zullen uw gegevens <a class="alert-link">Nooit delen met derde partijen!</a>
                     </div>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label for="vehicle1"> Ik ga akkoord met de voorwaarden</label><br>
+                    <input type="checkbox" id="voorwaarden" name="voorwaarden" value="voorwaarden">
+                    <label for="voorwaarden">Ik ga akkoord met de <a href="voorwaarden.html" class="alert-link">voorwaarden</label>
+                    <br>
+
+                    <input type="checkbox" id="privacy" name="privacy" value="privacy">
+                    <label for="privacy">Ik ga akkoord met de  <a href="privacypolicy.html" class="alert-link">Privacy policy</label><br>
                     <button type="submit" class="btn btn-outline-dark">Versturen</button> 
 
             </form>
